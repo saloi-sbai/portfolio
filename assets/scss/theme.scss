@@ -1,0 +1,13 @@
+@import "./header";
+@import "./footer";
+
+// import fonts
+/************************** fonts ***************************/
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: regular;
+  font-display: swap;
+}

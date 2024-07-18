@@ -14,9 +14,14 @@
 <body <?php body_class() ?>>
     <?php wp_body_open() ?>
 
-    
+
     <header class="nav-bar">
         <nav class="menu">
+            <div class="logo">
+                <div class="icon"><i class="fa-solid fa-square-full"></i></div>
+                <div class="nom">Saloi Sbai</div>
+                <div class="metier"> / Developpeuse web</div>
+            </div>
             <!-- Menu burger -->
             <!-- <div class="burgerMenu">
                 <span class="bar"></span>
