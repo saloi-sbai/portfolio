@@ -1,4 +1,6 @@
+@import "./variables";
 @import "./header";
+@import "./home";
 @import "./footer";
 
 // import fonts
@@ -10,4 +12,9 @@
   font-weight: 300;
   font-style: regular;
   font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }

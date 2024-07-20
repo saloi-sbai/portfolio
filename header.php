@@ -18,7 +18,10 @@
     <header class="nav-bar">
         <nav class="menu">
             <div class="logo">
-                <div class="icon"><i class="fa-solid fa-square-full"></i></div>
+                <div class="icon"><i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-laptop"></i>
+                    <i class="fa-solid fa-computer"></i>
+                </div>
                 <div class="nom">Saloi Sbai</div>
                 <div class="metier"> / Developpeuse web</div>
             </div>

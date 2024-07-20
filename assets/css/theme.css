@@ -21,17 +21,19 @@
   font-family: "Poppins";
 }
 .nav-bar .menu .logo .icon {
-  background-color: #ff7613;
+  color: #f2a71b;
 }
 .nav-bar .menu .logo .nom {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.5px;
+  color: #f2a71b;
 }
 .nav-bar .menu .logo .metier {
   font-size: 1.5rem;
   font-weight: 200;
   letter-spacing: 1.5px;
+  color: #025e73;
 }
 .nav-bar .menu .main-menu {
   display: flex;
@@ -48,12 +50,13 @@
   text-transform: uppercase;
 }
 .nav-bar .menu .main-menu .navMenu li a {
-  color: black;
+  color: #404040;
   text-decoration: none;
   cursor: pointer;
 }
 .nav-bar .menu .main-menu .navMenu li a:hover {
   font-weight: 700;
+  color: #f2a71b;
 }
 
 /* Menu BURGER */
@@ -82,7 +85,7 @@
   .nav-bar .menu .burgerMenu .bar {
     width: 100%;
     height: 4px;
-    background-color: black;
+    background-color: #011f26;
     transition: transform 0.3s ease-in-out;
   }
   .nav-bar .menu .burgerMenu.open .bar:nth-child(1) {
@@ -160,6 +163,154 @@
     padding-inline: 55px;
   }
 }
+.wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "poppins";
+  letter-spacing: 2px;
+  background-color: #011f26;
+  max-width: 40%;
+  height: 100%;
+}
+.wrapper .square {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 70%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: aliceblue;
+  animation: moveDown 1.5s ease-in-out forwards;
+}
+.wrapper .square .image {
+  background-color: #025e73;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .square .image .haut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .square .image .haut .mylogo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.wrapper .square .image .haut h2 {
+  text-transform: capitalize;
+  color: aliceblue;
+  font-size: 2rem;
+}
+.wrapper .square .image .haut p {
+  text-transform: capitalize;
+  color: aliceblue;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.wrapper .square .image .haut hr {
+  background-color: #fff;
+  width: 40%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper .square .image .social {
+  background-color: aliceblue;
+  height: 60px;
+  width: 100%;
+  font-size: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wrapper .square .image .social a {
+  color: #011f26;
+}
+.wrapper .square .description {
+  padding: 20px;
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #011f26;
+  background-color: #fff;
+}
+.wrapper .square .description h2 {
+  font-size: 10vh;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.wrapper .square .description h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.wrapper .square .description .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  width: 100%;
+}
+.wrapper .square .description .btn .cvBtn {
+  background-color: #025e73;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 150px;
+}
+.wrapper .square .description .btn .cvBtn:hover {
+  background-color: #fff;
+  color: #025e73;
+  border: 1px solid #025e73;
+}
+.wrapper .square .description .btn .projetBtn {
+  background-color: #fff;
+  color: #025e73;
+  padding: 10px 30px;
+  border: 1px solid #025e73;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 150px;
+}
+.wrapper .square .description .btn .projetBtn:hover {
+  background-color: #025e73;
+  color: #fff;
+}
+.wrapper .square .description p {
+  height: 40%;
+}
+
+/* Animation for moving the square down */
+@keyframes moveDown {
+  from {
+    transform: translateY(-12%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .footer-nav {
   height: 40px;
   display: flex;
@@ -180,19 +331,20 @@
   }
 }
 .footer-nav li {
-  font-family: "space-mono";
+  font-family: "Poppins";
   font-size: 16px;
   text-transform: uppercase;
   list-style-type: none;
   /* Style des liens dans les éléments de liste */
 }
 .footer-nav li a {
-  color: black;
+  color: #404040;
   text-decoration: none;
   /* Effet de survol des liens pour une meilleure visibilité */
 }
 .footer-nav li a:hover {
   font-weight: 700;
+  color: #f25c05;
 }
 
 /************************** fonts ***************************/
@@ -202,6 +354,10 @@
   font-weight: 300;
   font-style: regular;
   font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=theme.css.map */
