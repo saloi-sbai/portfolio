@@ -28,3 +28,9 @@ if (!function_exists('mytheme_register_nav_menu')) {
     }
     add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);
 }
+
+function custom_excerpt_length($length)
+{
+    return 20;
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);

@@ -17,11 +17,12 @@
             <h2>Hello</h2>
             <h3>Qui je suis et ce que je fais</h3>
             <div class="btn">
-                <button class="cvBtn">CV</button>
+                <a href="https://saloi-sbai.github.io/" target="_blank"><button class="cvBtn">CV</button></a>
                 <button class="projetBtn">Projets</button>
             </div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus excepturi necessitatibus quaerat velit sequi itaque mollitia eius totam corporis molestiae perferendis illum asperiores dolorum laborum, qui culpa maiores cupiditate suscipit.
+                Je suis une développeuse web junior créative et motivée,
+                passionnée par la création d'interfaces web modernes et intuitives .
             </p>
         </div>
     </div>

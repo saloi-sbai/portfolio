@@ -1,0 +1,48 @@
+.projets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  width: 90vw;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: $font;
+
+  .projet {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    .illustration {
+      width: 70%;
+      height: 70%;
+      a {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+            transition: transform 0.5s;
+          }
+        }
+      }
+    }
+    .extrait {
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+  }
+}

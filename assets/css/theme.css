@@ -21,13 +21,13 @@
   font-family: "Poppins";
 }
 .nav-bar .menu .logo .icon {
-  color: #f2a71b;
+  color: #f25c05;
 }
 .nav-bar .menu .logo .nom {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #f2a71b;
+  color: #f25c05;
 }
 .nav-bar .menu .logo .metier {
   font-size: 1.5rem;
@@ -56,7 +56,7 @@
 }
 .nav-bar .menu .main-menu .navMenu li a:hover {
   font-weight: 700;
-  color: #f2a71b;
+  color: #f25c05;
 }
 
 /* Menu BURGER */
@@ -311,6 +311,92 @@
     transform: translateY(0);
   }
 }
+.projets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas: ". ." ". ." ". .";
+  width: 90vw;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "poppins";
+}
+.projets .projet {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.projets .projet .illustration {
+  width: 70%;
+  height: 70%;
+}
+.projets .projet .illustration a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.projets .projet .illustration a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.projets .projet .extrait {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.contact-titre h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+.contact {
+  width: 100%;
+  height: 50vh;
+  background-color: #025e73;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact_title {
+  font-family: "Poppins";
+  font-size: 1.7rem;
+  color: #fff;
+}
+.contact .contact_btn {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.contact .btn {
+  background-color: #fff;
+  color: #025e73;
+  padding: 10px 30px;
+  border: 1px solid #025e73;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+}
+.contact .btn:hover {
+  background-color: #025e73;
+  color: #fff;
+}
+
 .footer-nav {
   height: 40px;
   display: flex;
