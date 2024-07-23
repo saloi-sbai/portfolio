@@ -8,7 +8,7 @@
   margin-bottom: 80px;
 }
 
-.form {
+.contact_form {
   background-color: $secondary_color;
   display: flex;
   justify-content: center;
@@ -18,52 +18,42 @@
 
   .wpcf7 {
     width: 70%;
-  }
-
-  input[type="text" i] {
-    width: 100%;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1.25rem;
-  }
-
-  input[type="email"] {
-    width: 100%;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1.25rem;
-  }
-
-  textarea {
-    width: 100%;
-    resize: none;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1.25rem;
-  }
-
-  label {
-    font-size: 1rem;
-    font-family: $font;
-    color: white;
-  }
-
-  input[type="submit" i] {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: white;
-    border: none;
-    font-family: $font;
-    font-size: 1rem;
-    color: $primary_color;
-    cursor: pointer;
-  }
-
-  input[type="submit" i]:hover {
-    color: $hover_color;
+    margin-top: 30px;
+    form {
+      p {
+        label {
+          font-size: 1rem;
+          font-family: $font;
+          color: white;
+          span {
+            width: 95%;
+            display: block;
+            input,
+            textarea {
+              width: 100%;
+              border: none;
+              border-radius: 0.5rem;
+              padding: 0.75rem 1rem;
+              margin-bottom: 1.25rem;
+              resize: none;
+            }
+          }
+        }
+        input[type="submit" i] {
+          width: 100%;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          background-color: white;
+          border: none;
+          font-family: $font;
+          font-size: 1rem;
+          color: $primary_color;
+          cursor: pointer;
+          &:hover {
+            color: $hover_color;
+          }
+        }
+      }
+    }
   }
 }

@@ -358,6 +358,9 @@
 .projets .projet .extrait {
   font-size: 0.8rem;
   margin-top: 10px;
+  font-family: "poppins";
+  text-align: center;
+  color: #011f26;
 }
 
 .contact-title {
@@ -370,7 +373,7 @@
   margin-bottom: 80px;
 }
 
-.form {
+.contact_form {
   background-color: #025e73;
   display: flex;
   justify-content: center;
@@ -378,37 +381,29 @@
   width: 50%;
   margin: 0 auto;
 }
-.form .wpcf7 {
+.contact_form .wpcf7 {
   width: 70%;
+  margin-top: 30px;
 }
-.form input[type=text i] {
-  width: 100%;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1.25rem;
-}
-.form input[type=email] {
-  width: 100%;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1.25rem;
-}
-.form textarea {
-  width: 100%;
-  resize: none;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1.25rem;
-}
-.form label {
+.contact_form .wpcf7 form p label {
   font-size: 1rem;
   font-family: "poppins";
   color: white;
 }
-.form input[type=submit i] {
+.contact_form .wpcf7 form p label span {
+  width: 95%;
+  display: block;
+}
+.contact_form .wpcf7 form p label span input,
+.contact_form .wpcf7 form p label span textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  resize: none;
+}
+.contact_form .wpcf7 form p input[type=submit i] {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -419,8 +414,30 @@
   color: #011f26;
   cursor: pointer;
 }
-.form input[type=submit i]:hover {
+.contact_form .wpcf7 form p input[type=submit i]:hover {
   color: #f25c05;
+}
+
+.single_projet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 15px 15px;
+  grid-auto-flow: row;
+  grid-template-areas: "projet_infos illustation_projet" "projet_infos illustation_projet" "navigation navigation";
+}
+
+.illustation_projet {
+  grid-area: illustation_projet;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+.projet_infos {
+  grid-area: projet_infos;
 }
 
 .footer-nav {
