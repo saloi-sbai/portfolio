@@ -8,6 +8,7 @@ $query = new WP_Query($args);
 
 if ($query->have_posts()) :
 ?>
+    <h2 class="title_projets">Mes projets</h2>
     <section class="projets">
         <?php while ($query->have_posts()) : $query->the_post(); ?>
             <article class="projet">

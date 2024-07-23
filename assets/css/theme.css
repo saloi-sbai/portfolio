@@ -311,6 +311,15 @@
     transform: translateY(0);
   }
 }
+.title_projets {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #011f26;
+  font-family: "poppins";
+  text-align: center;
+  padding-top: 100px;
+}
+
 .projets {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -351,50 +360,67 @@
   margin-top: 10px;
 }
 
-.contact-titre h3 {
+.contact-title {
   font-size: 2rem;
-  font-weight: 500;
-  font-family: "Poppins";
+  font-weight: 700;
+  font-family: "poppins";
+  color: #011f26;
   text-align: center;
+  padding-top: 80px;
+  margin-bottom: 80px;
 }
 
-.contact {
-  width: 100%;
-  height: 50vh;
+.form {
   background-color: #025e73;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  margin: 0 auto;
 }
-.contact .contact_title {
-  font-family: "Poppins";
-  font-size: 1.7rem;
-  color: #fff;
+.form .wpcf7 {
+  width: 70%;
 }
-.contact .contact_btn {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 30%;
+.form input[type=text i] {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
 }
-.contact .btn {
-  background-color: #fff;
-  color: #025e73;
-  padding: 10px 30px;
-  border: 1px solid #025e73;
-  border-radius: 20px;
+.form input[type=email] {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+.form textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+.form label {
   font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  width: 150px;
-  text-decoration: none;
-  text-align: center;
+  font-family: "poppins";
+  color: white;
 }
-.contact .btn:hover {
-  background-color: #025e73;
-  color: #fff;
+.form input[type=submit i] {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: none;
+  font-family: "poppins";
+  font-size: 1rem;
+  color: #011f26;
+  cursor: pointer;
+}
+.form input[type=submit i]:hover {
+  color: #f25c05;
 }
 
 .footer-nav {
