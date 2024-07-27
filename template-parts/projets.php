@@ -20,11 +20,17 @@ if ($query->have_posts()) :
                 <div class="extrait"><?php
                                         // On met l'extrait dans une variable   
                                         $content = get_the_excerpt();
+                                        // On compte le nombre de mots
+                                        $word_count = str_word_count($content);
+                                        // On coupe le texte à 20 mots
+                                        $content = wp_trim_words($content, 20);
+                                        // On affiche le contenu
+                                        echo $content;
+                                        // Si le nombre de mots est supérieur à 20, on affiche un lien
+                                        if ($word_count > 20) {
+                                            echo '... <a href="' . esc_url(get_permalink()) . '">Lire la suite</a>';
+                                        }
 
-                                        // get the first 40 words from the content and added to the $abstract variable
-                                        preg_match('/^([^.!?\s]*[\.!?\s]+){0,7}/', strip_tags($content), $abstract);
-                                        // pregmatch will return an array and the first 40 chars will be in the first element 
-                                        echo $abstract[0] . '...';
                                         ?>
                 </div>
             </article>

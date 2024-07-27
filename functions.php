@@ -4,6 +4,9 @@ function theme_enqueue_styles()
 {
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/theme.css'));
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+    wp_enqueue_script('burger-menu', get_template_directory_uri() . '/assets/scripts/burger-menu.js', array('jquery'), null, true);
+    // Enqueue jQuery from CDN
+    wp_enqueue_script('jquery-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), '3.7.1', true);
 }
 
 function montheme_supports()

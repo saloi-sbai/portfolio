@@ -32,10 +32,16 @@ if (have_posts()) :
         <div class="navigation">
             <div class="next">
                 <?php
-                if (!empty(next_post_link('%link'))) {
+                // Retrieve the next post object
+                $next_post = get_adjacent_post(false, '', false);
+
+                // Check if there is a next post
+                if (!empty($next_post)) {
+                    // Display the next post link
+                    // Display the arrow icon
                     echo '<i class="fa-solid fa-arrow-left"></i>';
                     next_post_link('%link');
-                };
+                }
                 ?>
             </div>
 
@@ -46,10 +52,16 @@ if (have_posts()) :
             <div class="previous">
 
                 <?php
-                if (!empty(previous_post_link('%link'))) {
-                    echo '<i class="fa-solid fa-arrow-right"></i>';
+                // Retrieve the next post object
+                $previous_post = get_adjacent_post(false, '', true);
+
+                // Check if there is a next post
+                if (!empty($previous_post)) {
+                    // Display the next post link
+                    // Display the arrow icon
                     previous_post_link('%link');
-                };
+                    echo '<i class="fa-solid fa-arrow-right"></i>';
+                }
                 ?>
             </div>
         </div>

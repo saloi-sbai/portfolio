@@ -3,13 +3,20 @@
 
 <main>
     <div class="container">
-        <?php get_template_part('template-parts/home'); ?>
+        <div id="home_page">
+            <?php get_template_part('template-parts/home'); ?>
+        </div>
+        <div id="projet_page">
+            <?php get_template_part('template-parts/projets'); ?>
+        </div>
+        <div class="competences">
+            <?php get_template_part('template-parts/competences'); ?>
+        </div>
+        <div id="contact_page">
+            <!-- affichage du contact -->
+            <?php get_template_part('template-parts/contact'); ?>
+        </div>
     </div>
-    <?php get_template_part('template-parts/projets'); ?>
-    <!-- affichage du contact -->
-    <?php get_template_part('template-parts/contact'); ?>
-
-
 </main>
 
 <?php get_footer() ?>

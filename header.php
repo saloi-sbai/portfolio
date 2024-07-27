@@ -18,19 +18,16 @@
     <header class="nav-bar">
         <nav class="menu">
             <div class="logo">
-                <div class="icon"><i class="fa-solid fa-play"></i>
-                    <i class="fa-solid fa-laptop"></i>
-                    <i class="fa-solid fa-computer"></i>
-                </div>
-                <div class="nom">Saloi Sbai</div>
-                <div class="metier"> / Developpeuse web</div>
+                <a href="<?php echo home_url(); ?>">
+                    <h2>Mon portfolio</h2>
+
             </div>
             <!-- Menu burger -->
-            <!-- <div class="burgerMenu">
+            <div class="burgerMenu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div> -->
+            </div>
 
             <div class="main-menu">
                 <?php

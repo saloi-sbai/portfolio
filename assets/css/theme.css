@@ -13,27 +13,15 @@
   align-items: center;
   width: 100%;
 }
-.nav-bar .menu .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-family: "Poppins";
+.nav-bar .menu .logo a {
+  text-decoration: none;
 }
-.nav-bar .menu .logo .icon {
-  color: #f25c05;
-}
-.nav-bar .menu .logo .nom {
+.nav-bar .menu h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
   color: #f25c05;
-}
-.nav-bar .menu .logo .metier {
-  font-size: 1.5rem;
-  font-weight: 200;
-  letter-spacing: 1.5px;
-  color: #025e73;
+  font-family: "poppins";
+  text-transform: uppercase;
 }
 .nav-bar .menu .main-menu {
   display: flex;
@@ -163,152 +151,96 @@
     padding-inline: 55px;
   }
 }
+/* Animation for moving the square down */
 .wrapper {
-  min-height: 100vh;
-  width: 100vw;
-  font-family: "poppins";
-  letter-spacing: 2px;
-  background-color: #011f26;
-  max-width: 40%;
-  height: 100%;
-}
-.wrapper .square {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 70%;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: aliceblue;
-  animation: moveDown 1.5s ease-in-out forwards;
-}
-.wrapper .square .image {
-  background-color: #025e73;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  min-width: 50%;
-  height: 100%;
-  object-fit: cover;
-}
-.wrapper .square .image .haut {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper .square .image .haut .mylogo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-.wrapper .square .image .haut h2 {
-  text-transform: capitalize;
-  color: aliceblue;
-  font-size: 2rem;
-}
-.wrapper .square .image .haut p {
-  text-transform: capitalize;
-  color: aliceblue;
-  font-size: 1.2rem;
-  text-align: center;
-}
-.wrapper .square .image .haut hr {
-  background-color: #fff;
-  width: 40%;
-  height: 4px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.wrapper .square .image .social {
-  background-color: aliceblue;
-  height: 60px;
-  width: 100%;
-  font-size: 3vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.wrapper .square .image .social a {
-  color: #011f26;
-}
-.wrapper .square .description {
   padding: 20px;
-  min-width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  color: #011f26;
-  background-color: #fff;
-}
-.wrapper .square .description h2 {
-  font-size: 10vh;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.wrapper .square .description h3 {
-  font-size: 1.5rem;
-  font-weight: 200;
-  text-transform: capitalize;
-}
-.wrapper .square .description .btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 1rem;
-  width: 100%;
-}
-.wrapper .square .description .btn .cvBtn {
-  background-color: #025e73;
-  color: white;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s;
-  width: 150px;
-}
-.wrapper .square .description .btn .cvBtn:hover {
-  background-color: #fff;
-  color: #025e73;
-  border: 1px solid #025e73;
-}
-.wrapper .square .description .btn .projetBtn {
-  background-color: #fff;
-  color: #025e73;
-  padding: 10px 30px;
-  border: 1px solid #025e73;
-  border-radius: 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  width: 150px;
-}
-.wrapper .square .description .btn .projetBtn:hover {
-  background-color: #025e73;
-  color: #fff;
-}
-.wrapper .square .description p {
-  height: 40%;
+  box-sizing: border-box;
+  font-family: "poppins";
 }
 
-/* Animation for moving the square down */
-@keyframes moveDown {
-  from {
-    transform: translateY(-12%);
+.square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.image,
+.description {
+  padding: 20px;
+}
+.image .description_title,
+.description .description_title {
+  font-size: 3rem;
+}
+.image .description_content,
+.image .pitch,
+.description .description_content,
+.description .pitch {
+  font-size: 1.2rem;
+  letter-spacing: 1.5;
+}
+
+.image .haut img.mylogo {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.nom {
+  font-size: 1.5rem;
+  color: #011f26;
+}
+
+.metier {
+  font-size: 1.2rem;
+  color: #011f26;
+}
+
+.social a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #025e73;
+}
+
+.btn a button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #025e73;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 20%;
+  transition: background-color 0.3s;
+}
+
+.btn a button:hover {
+  background-color: #f25c05;
+}
+
+@media (min-width: 768px) {
+  .square {
+    flex-direction: row;
+    justify-content: space-between;
   }
-  to {
-    transform: translateY(0);
+  .image,
+  .description {
+    max-width: 50%;
+    text-align: left;
+  }
+  .description .btn {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .square {
+    max-width: 1200px;
   }
 }
 .title_projets {
@@ -361,6 +293,28 @@
   font-family: "poppins";
   text-align: center;
   color: #011f26;
+}
+
+.competence_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #011f26;
+  font-family: "poppins";
+  text-align: center;
+  padding-top: 80px;
+}
+
+.competence_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-top: 50px;
+}
+.competence_item .item img {
+  width: 100px;
+  height: 100px;
 }
 
 .contact-title {
