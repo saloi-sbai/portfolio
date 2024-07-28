@@ -92,7 +92,7 @@
     z-index: 999;
     top: 80px;
     right: 0;
-    background-color: #e00000;
+    background-color: #025e73;
     width: 100vw;
     max-height: 0;
     overflow: hidden;
@@ -115,10 +115,10 @@
     padding-inline: 0;
   }
   .nav-bar .menu .main-menu .navMenu li {
-    font-size: 44px !important;
+    font-size: 1.2rem;
   }
   .nav-bar .menu .main-menu .navMenu li a {
-    color: red;
+    color: white;
   }
 }
 @keyframes openNav {
@@ -151,7 +151,6 @@
     padding-inline: 55px;
   }
 }
-/* Animation for moving the square down */
 .wrapper {
   display: flex;
   flex-direction: column;
