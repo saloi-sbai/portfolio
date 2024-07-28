@@ -255,9 +255,8 @@
 .projets {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 30px 30px;
-  grid-template-areas: ". ." ". ." ". .";
   width: 90vw;
   margin-top: 80px;
   margin-right: auto;
@@ -295,6 +294,36 @@
   color: #011f26;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .title_projets {
+    font-size: 2rem;
+    padding-top: 80px;
+  }
+  .projets {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title_projets {
+    font-size: 1.5rem;
+    padding-top: 60px;
+  }
+  .projets {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    width: 100%;
+  }
+  .projets .projet .illustration {
+    width: 100%;
+    height: auto;
+  }
+  .projets .projet .extrait {
+    font-size: 0.8rem;
+  }
+}
 .competence_title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -326,6 +355,20 @@
   padding-top: 80px;
   margin-bottom: 80px;
 }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .contact-title {
+    font-size: 1.75rem;
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-title {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 
 .contact_form {
   background-color: #025e73;
@@ -335,14 +378,46 @@
   width: 50%;
   margin: 0 auto;
 }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .contact_form {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_form {
+    width: 90%;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
 .contact_form .wpcf7 {
   width: 70%;
   margin-top: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .contact_form .wpcf7 {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_form .wpcf7 {
+    width: 100%;
+  }
 }
 .contact_form .wpcf7 form p label {
   font-size: 1rem;
   font-family: "poppins";
   color: white;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .contact_form .wpcf7 form p label {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_form .wpcf7 form p label {
+    font-size: 0.75rem;
+  }
 }
 .contact_form .wpcf7 form p label span {
   width: 95%;
@@ -357,6 +432,20 @@
   margin-bottom: 1.25rem;
   resize: none;
 }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .contact_form .wpcf7 form p label span input,
+  .contact_form .wpcf7 form p label span textarea {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_form .wpcf7 form p label span input,
+  .contact_form .wpcf7 form p label span textarea {
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
 .contact_form .wpcf7 form p input[type=submit i] {
   width: 100%;
   padding: 1rem;
@@ -367,6 +456,18 @@
   font-size: 1rem;
   color: #011f26;
   cursor: pointer;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .contact_form .wpcf7 form p input[type=submit i] {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact_form .wpcf7 form p input[type=submit i] {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
 }
 .contact_form .wpcf7 form p input[type=submit i]:hover {
   color: #f25c05;
@@ -469,6 +570,81 @@
   font-weight: bolder;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .single_projet {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .single_projet .illustration_projet,
+  .single_projet .projet_infos {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .single_projet .projet_infos {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .content_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content_footer .technos {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .content_footer .link a {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single_projet {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .single_projet .illustration_projet,
+  .single_projet .projet_infos {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+  .single_projet .projet_infos {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .single_projet .content {
+    font-size: 0.9rem;
+  }
+  .single_projet .content h2 {
+    font-size: 1.2rem;
+  }
+  .content_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content_footer .technos {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .content_footer .link a {
+    font-size: 1.2rem;
+  }
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .navigation .next a,
+  .navigation .previous a,
+  .navigation .home_page a {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
 .footer-nav {
   height: 40px;
   display: flex;

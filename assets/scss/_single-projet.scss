@@ -53,15 +53,16 @@
       }
     }
 
-    .link a {
-      color: $secondary_color;
-      text-decoration: none;
-      font-size: 1.4rem;
-      // font-family: $font;
-      font-weight: bolder;
-
-      .fa-brands {
-        font-size: 2rem;
+    .link {
+      a {
+        color: $secondary_color;
+        text-decoration: none;
+        font-size: 1.4rem;
+        // font-family: $font;
+        font-weight: bolder;
+        .fa-brands {
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -109,5 +110,98 @@
     font-size: 1.4rem;
     // font-family: $font;
     font-weight: bolder;
+  }
+}
+//tootip:https://youtu.be/ujlpzTyJp-M?si=L3KmsxEXnrx6PhZ4
+
+// Tablet portrait
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .single_projet {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+
+    .illustration_projet,
+    .projet_infos {
+      width: 90%;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 20px;
+    }
+
+    .projet_infos {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .content_footer {
+    flex-direction: column;
+    align-items: center;
+
+    .technos {
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .link a {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Mobiles
+@media only screen and (max-width: 767px) {
+  .single_projet {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+
+    .illustration_projet,
+    .projet_infos {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 10px;
+    }
+
+    .projet_infos {
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+
+    .content {
+      font-size: 0.9rem;
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .content_footer {
+    flex-direction: column;
+    align-items: center;
+
+    .technos {
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .link a {
+      font-size: 1.2rem;
+    }
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .next a,
+    .previous a,
+    .home_page a {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
   }
 }

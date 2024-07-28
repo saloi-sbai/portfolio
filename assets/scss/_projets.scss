@@ -6,15 +6,12 @@
   text-align: center;
   padding-top: 100px;
 }
+
 .projets {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 30px 30px;
-  grid-template-areas:
-    ". ."
-    ". ."
-    ". .";
   width: 90vw;
   margin-top: 80px;
   margin-right: auto;
@@ -48,13 +45,53 @@
         }
       }
     }
+
     .extrait {
       font-size: 0.9rem;
       margin-top: 10px;
       font-family: $font;
       text-align: center;
       color: $primary_color;
-      
+    }
+  }
+}
+
+// Tablet portrait (unchanged)
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .title_projets {
+    font-size: 2rem;
+    padding-top: 80px;
+  }
+
+  .projets {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px 20px;
+  }
+}
+
+// Mobiles (corrected)
+@media only screen and (max-width: 767px) {
+  .title_projets {
+    font-size: 1.5rem;
+    padding-top: 60px;
+  }
+
+  .projets {
+    grid-template-columns: 1fr; // Set to a single column
+    grid-template-rows: auto;
+    gap: 15px; // Reduced gap for mobile
+    width: 100%; // Ensure full width usage
+
+    .projet {
+      .illustration {
+        width: 100%; // Adjust width to 100%
+        height: auto; // Auto height for proper scaling
+      }
+
+      .extrait {
+        font-size: 0.8rem;
+      }
     }
   }
 }

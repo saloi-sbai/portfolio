@@ -6,6 +6,18 @@
   text-align: center;
   padding-top: 80px;
   margin-bottom: 80px;
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    font-size: 1.75rem;
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .contact_form {
@@ -16,18 +28,47 @@
   width: 50%;
   margin: 0 auto;
 
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 90%;
+    flex-direction: column;
+    padding: 20px; // Optional padding for smaller screens
+  }
+
   .wpcf7 {
     width: 70%;
     margin-top: 30px;
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+
     form {
       p {
         label {
           font-size: 1rem;
           font-family: $font;
           color: white;
+
+          @media only screen and (min-width: 768px) and (max-width: 959px) {
+            font-size: 0.875rem;
+          }
+
+          @media only screen and (max-width: 767px) {
+            font-size: 0.75rem;
+          }
+
           span {
             width: 95%;
             display: block;
+
             input,
             textarea {
               width: 100%;
@@ -36,9 +77,20 @@
               padding: 0.75rem 1rem;
               margin-bottom: 1.25rem;
               resize: none;
+
+              @media only screen and (min-width: 768px) and (max-width: 959px) {
+                padding: 0.5rem 0.75rem;
+                margin-bottom: 1rem;
+              }
+
+              @media only screen and (max-width: 767px) {
+                padding: 0.5rem 0.5rem;
+                margin-bottom: 0.75rem;
+              }
             }
           }
         }
+
         input[type="submit" i] {
           width: 100%;
           padding: 1rem;
@@ -49,6 +101,17 @@
           font-size: 1rem;
           color: $primary_color;
           cursor: pointer;
+
+          @media only screen and (min-width: 768px) and (max-width: 959px) {
+            font-size: 0.875rem;
+            padding: 0.75rem;
+          }
+
+          @media only screen and (max-width: 767px) {
+            font-size: 0.75rem;
+            padding: 0.5rem;
+          }
+
           &:hover {
             color: $hover_color;
           }
