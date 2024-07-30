@@ -35,7 +35,7 @@ if (have_posts()) :
                                 }
                             }
                         } else {
-                            echo '<p>Aucun lien github trouvé.</p>';
+                            echo '<p>Pas de lien github pour ce projet.</p>';
                         }
                         ?>
                     </div>
