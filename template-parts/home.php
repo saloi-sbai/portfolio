@@ -2,7 +2,11 @@
     <div class="square">
         <div class="image">
             <div class="haut">
-                <img class="mylogo" src="http://localhost/portfolio/wp-content/uploads/2024/07/logo_salwa.jpg" alt="">
+                <img class="mylogo" src="
+                                <?php
+                                echo get_site_url() . "/wp-content/uploads/2024/07/logo_salwa.jpg";
+                                ?>
+                " alt="photo saloi">
 
                 <h2 class="nom">saloi sbai </h2>
                 <hr>
@@ -18,7 +22,11 @@
             <h3 class="pitch">Qui je suis et ce que je fais</h3>
             <div class="btn">
                 <a href="https://saloi-sbai.github.io/" target="_blank"><button class="cvBtn">CV</button></a>
-                <a href="http://localhost/portfolio/#projet_page"><button class="projetBtn">Projets</button></a>
+                <a href="
+                <?php
+                echo get_site_url() . "/#projet_page";
+                ?>
+                "><button class="projetBtn">Projets</button></a>
             </div>
             <p class="description_content">
                 Je suis une développeuse web junior créative et motivée,

@@ -1,5 +1,5 @@
 <h2 class="competence_title">Mes compétences</h2>
-<div class="competence_item">
+<div class="competence_item" id="competences">
     <div class="item">
         <?php echo '<img src="' . get_template_directory_uri() . '/assets/images/html-5.png">'; ?>
     </div>
