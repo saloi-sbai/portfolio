@@ -168,14 +168,20 @@
     .projet_infos {
       padding-top: 30px;
       padding-bottom: 10px;
+      width: 90%;
     }
 
     .content {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       h2 {
         font-size: 1.2rem;
       }
     }
+  }
+
+  .illustration_projet img {
+    width: 400px;
+    height: 400px;
   }
 
   .content_footer {

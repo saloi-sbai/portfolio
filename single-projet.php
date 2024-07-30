@@ -17,7 +17,27 @@ if (have_posts()) :
                         ?>
                     </div>
                     <div class="link">
-                        <a title="Voir le code source" class="tooltip" href="<?php echo esc_url(get_post_meta($post->ID, 'link', true)); ?>" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                        <?php
+                        // Get the terms in the 'code' taxonomy for the current post
+                        $terms = get_the_terms($post->ID, 'code');
+
+                        if ($terms && !is_wp_error($terms)) {
+                            foreach ($terms as $term) {
+                                // Extract the URL from the 'name' field
+                                $github_link = isset($term->name) ? trim($term->name) : '';
+
+                                // Validate the URL
+                                if (!empty($github_link)) {
+                                    // Output the link
+                                    echo '<a href="' . esc_url($github_link) . '" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>';
+                                } else {
+                                    echo '<p>GitHub link not available or invalid.</p>';
+                                }
+                            }
+                        } else {
+                            echo '<p>Aucun lien github trouvé.</p>';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

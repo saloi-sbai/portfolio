@@ -19,11 +19,12 @@ if ($query->have_posts()) :
                 </div>
                 <div class="extrait"><?php
                                         // On met l'extrait dans une variable   
-                                        $content = get_the_excerpt();
+                                        // $content = get_the_excerpt();
+                                        $content = get_the_content();
                                         // On compte le nombre de mots
                                         $word_count = str_word_count($content);
-                                        // On coupe le texte à 20 mots
-                                        $content = wp_trim_words($content, 20);
+                                        // On coupe le texte à 15 mots
+                                        $content = wp_trim_words($content, 15);
                                         // On affiche le contenu
                                         echo $content;
                                         // Si le nombre de mots est supérieur à 20, on affiche un lien
