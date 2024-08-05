@@ -14,7 +14,7 @@
             </div>
             <div class="social">
                 <a href="https://www.linkedin.com/in/saloi-sbai-b5a394274/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/saloi-sbai"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/saloi-sbai" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
         <div class="description">

@@ -1,11 +1,12 @@
 <?php
+// configuration de la requete
 $args = array(
     'post_type'      => 'projet',
     'posts_per_page' => 8,
 );
-
+// creation de la requete
 $query = new WP_Query($args);
-
+// on verifie s'il ya des articles qui correspondent a la requete et on affiche les projets
 if ($query->have_posts()) :
 ?>
     <h2 class="title_projets">Mes projets</h2>

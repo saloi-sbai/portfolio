@@ -217,7 +217,7 @@
   color: white;
   cursor: pointer;
   border-radius: 10px;
-  width: 20%;
+  width: fit-content;
   transition: background-color 0.3s;
 }
 
@@ -258,7 +258,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 30px 30px;
-  width: 90vw;
   margin-top: 80px;
   margin-right: auto;
   margin-left: auto;
@@ -314,7 +313,7 @@
   .projets {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 15px;
+    gap: 30px;
     width: 100%;
   }
   .projets .projet .illustration {
@@ -323,6 +322,7 @@
   }
   .projets .projet .extrait {
     font-size: 0.8rem;
+    padding: 20px;
   }
 }
 .competence_title {
@@ -378,6 +378,7 @@
   align-items: center;
   width: 50%;
   margin: 0 auto;
+  border-radius: 5px;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .contact_form {
@@ -539,6 +540,7 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 20px;
+  font-family: "poppins";
 }
 .navigation .next a {
   color: #025e73;
@@ -625,8 +627,8 @@
     font-size: 1.2rem;
   }
   .illustration_projet img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
   .content_footer {
     flex-direction: column;
@@ -698,6 +700,13 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.container,
+.row {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=theme.css.map */

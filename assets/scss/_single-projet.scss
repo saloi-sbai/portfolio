@@ -74,6 +74,7 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 20px;
+  font-family: $font;
 
   .next a {
     color: $secondary_color;
@@ -180,8 +181,8 @@
   }
 
   .illustration_projet img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .content_footer {

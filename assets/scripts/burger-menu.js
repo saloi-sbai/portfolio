@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!menuBurger || !nav) {
     console.error("Menu burger or navigation elements not found");
-    return; // Exit if elements are not found
+    return; 
   }
 
   menuBurger.addEventListener("click", function (event) {

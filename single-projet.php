@@ -18,15 +18,15 @@ if (have_posts()) :
                     </div>
                     <div class="link">
                         <?php
-                        // Get the terms in the 'code' taxonomy for the current post
+                        // Obtenir les termes dans la taxonomie 'code' pour le poste actuel
                         $terms = get_the_terms($post->ID, 'code');
 
                         if ($terms && !is_wp_error($terms)) {
                             foreach ($terms as $term) {
-                                // Extract the URL from the 'name' field
+                                // Extraire l’URL du champ 'name'
                                 $github_link = isset($term->name) ? trim($term->name) : '';
 
-                                // Validate the URL
+                                // Valider l’URL
                                 if (!empty($github_link)) {
                                     // Output the link
                                     echo '<a href="' . esc_url($github_link) . '" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>';
@@ -52,13 +52,10 @@ if (have_posts()) :
         <div class="navigation">
             <div class="next">
                 <?php
-                // Retrieve the next post object
                 $next_post = get_adjacent_post(false, '', false);
 
                 // Check if there is a next post
                 if (!empty($next_post)) {
-                    // Display the next post link
-                    // Display the arrow icon
                     echo '<i class="fa-solid fa-arrow-left"></i>';
                     next_post_link('%link');
                 }
@@ -72,13 +69,10 @@ if (have_posts()) :
             <div class="previous">
 
                 <?php
-                // Retrieve the next post object
                 $previous_post = get_adjacent_post(false, '', true);
 
                 // Check if there is a next post
                 if (!empty($previous_post)) {
-                    // Display the next post link
-                    // Display the arrow icon
                     previous_post_link('%link');
                     echo '<i class="fa-solid fa-arrow-right"></i>';
                 }
